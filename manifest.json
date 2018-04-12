@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Ultimatni JS extension by kolega",
-	"version": "1.0",
-	"author": "Autor",
+	"name": "WTF elements for Pražský Barcamp 2018",
+	"version": "2.0",
+	"author": "Ondřej Kolín, Jakub Rychlý",
 	"description": "Great app",
 	"content_scripts": [{
 		"matches": ["<all_urls>"],
