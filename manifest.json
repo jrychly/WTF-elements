@@ -2,11 +2,26 @@
 	"manifest_version": 2,
 	"name": "WTF elements for Pražský Barcamp 2018",
 	"version": "2.0",
+
 	"author": "Ondřej Kolín, Jakub Rychlý",
 	"description": "Great app",
-	"content_scripts": [{
-		"matches": ["<all_urls>"],
-		"js": ["kolega.js"],
-		"css": ["kolega.css"]
-	}]
+	"homepage_url": "https://github.com/jrychly/WTF-elements",
+
+	"browser_action": {
+		"default_icon": "icons/border-48.png",
+		"default_title": "WTF elements",
+		"default_popup": "odkazy.html"
+	  },
+
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["kolega.js"],
+			"css": ["kolega.css"]
+		}
+	]
 }
